@@ -7,7 +7,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) { // show search after scrolling 100px
+      if (window.scrollY > 100) {
         setShowSearch(true);
       } else {
         setShowSearch(false);
@@ -22,12 +22,12 @@ export default function Navbar() {
       <nav className="w-full fixed top-0 left-0 bg-white shadow-md z-50 transition-all duration-300">
         <div className="max-w-8xl mx-auto px-6 flex justify-between items-center h-16">
 
-          {/* Logo */}
+         
           <div className="flex items-center space-x-2">
             <img src="/images/logo.png" alt="Logo" className="w-20 h-12" />
           </div>
 
-          {/* Desktop Links / Search */}
+         
           <div className="hidden md:flex flex-1 justify-center items-center">
             {showSearch ? (
               <input
@@ -53,14 +53,14 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* Desktop Sign-in */}
+         
           {!showSearch && (
             <div className="hidden md:block">
               <a href="#" className="font-medium hover:text-red-500">Sign in</a>
             </div>
           )}
 
-          {/* Mobile Menu Button */}
+         
           {!showSearch && (
             <div className="md:hidden">
               <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
@@ -70,7 +70,7 @@ export default function Navbar() {
           )}
         </div>
 
-        {/* Mobile Menu */}
+      
         {!showSearch && isOpen && (
           <div className="px-6 pb-3 md:hidden space-y-3 bg-white shadow-md">
             <a href="#" className="block text-gray-800 hover:text-red-500 font-medium">Business Directory</a>
@@ -82,7 +82,7 @@ export default function Navbar() {
         )}
       </nav>
 
-      {/* Spacer to prevent jump when search appears */}
+    
       {showSearch && <div className="h-16"></div>}
     </>
   );
