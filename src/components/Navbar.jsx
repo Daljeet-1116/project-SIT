@@ -54,7 +54,7 @@ export default function Navbar() {
           </div>
 
           {!showSearch && (
-            <div className="hidden md:block">
+            <div className="md:block">
               <a href="#" className="font-medium hover:text-red-500">Sign in</a>
             </div>
           )}
