@@ -68,16 +68,16 @@ export default function Navbar() {
             </a>
           </div>
 
-          {!showSearch && (
+      
             <div className="md:hidden">
               <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
                 {isOpen ? <HiX /> : <HiMenu />}
               </button>
             </div>
-          )}
+          
         </div>
 
-        {!showSearch && isOpen && (
+        {isOpen && (
           <div className="px-6 pb-3 md:hidden space-y-3 bg-white shadow-md">
             <a
               href="#"
