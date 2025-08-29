@@ -70,7 +70,7 @@ export default function Navbar() {
 
    
         {!showSearch && isOpen && (
-          <div className="px-6 pb-3 md:hidden space-y-3 bg-white shadow-md">
+          <div className="px-6 pb-3  space-y-3 bg-white shadow-md">
             <a href="#" className="block text-gray-800 hover:text-red-500 font-medium">Business Directory</a>
             <a href="#" className="block text-gray-800 hover:text-red-500 font-medium">Market Place</a>
             <a href="#" className="block text-gray-800 hover:text-red-500 font-medium">Education</a>
@@ -79,8 +79,6 @@ export default function Navbar() {
           </div>
         )}
       </nav>
-
-  
       {showSearch && <div className="h-16"></div>}
     </>
   );
