@@ -1,7 +1,7 @@
 export default function FourCards() {
   return (
     <>
-      <div className="bg-blue-100 h-[60rem]">
+      <div className="bg-blue-100 h-[120rem ] flex items-center">
         <div className="max-w-7xl mx-auto px-6 py-10 ">
           <div className="flex justify-center items-center w-full mt-6">
 
@@ -23,7 +23,7 @@ export default function FourCards() {
             Featured Business
           </h2>
           {/* 1 card */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white  rounded-2xl shadow-md overflow-hidden w-72">
               <img
                 src="/images/card.jpg"
