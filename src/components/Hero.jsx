@@ -1,12 +1,12 @@
 export default function FourCards() {
   return (
     <>
-      <div className="bg-blue-100 h-[120rem ] flex items-center">
+      <div className="bg-blue-100 h-[170rem ] flex items-center">
         <div className="max-w-7xl mx-auto px-6 py-10 ">
           <div className="flex justify-center items-center w-full mt-6">
 
             
-            <div className="w-full max-w-lg flex items-center bg-white border border-gray-300 shadow-sm px-2 py-2  my-18">
+            <div className="w-full max-w-lg flex items-center bg-white border border-gray-300 shadow-sm px-2 py-2  my-24">
               <input
                 type="text"
                 placeholder="Looking for busniess directory"
